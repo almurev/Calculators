@@ -13,11 +13,12 @@
    git clone <ссылка_на_репозиторий> далее ссылка: https://github.com/almurev/Calculators
 2. Создать виртуальное окружение:
    python -m venv .venv
-3. Активировать окружение:
+   (Если не получается или нет интерпретатора - Settings - Python - Python Interpeter - Home (Icon) - Add Local Interpreter
+4. Активировать окружение:
    .venv\Scripts\activate
-4. Установить зависимости:
+5. Установить зависимости:
    pip install pyqt6
-5. Проверить установленные зависимости:
+6. Проверить установленные зависимости:
    pip list
-6. Запустить приложение:
+7. Запустить приложение:
    python main.py
