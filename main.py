@@ -10,9 +10,6 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         super().__init__()
         self.setupUi(self)
 
-        # -------------------------
-        # подключения кнопок
-        # -------------------------
         self.percentCalc1.clicked.connect(self.calc_percent1)
         self.percentCalc2.clicked.connect(self.calc_percent2)
         self.percentCalc3.clicked.connect(self.calc_percent3)
@@ -42,9 +39,8 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.update_gcd_ui()
         self.update_matrix_ui()
 
-    # =========================
     # ПОКАЗ / СКРЫТИЕ НОД/НОК
-    # =========================
+
     def update_gcd_ui(self):
 
         self.num3.setVisible(False)
@@ -62,9 +58,9 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             self.gcdL3.setVisible(True)
             self.gcdL4.setVisible(True)
 
-    # =========================
+
     # МАТРИЦЫ (2×2 / 3×3)
-    # =========================
+    
     def update_matrix_ui(self):
 
         rows_a = int(self.aRows.currentText())
@@ -79,9 +75,8 @@ class MainWindow(QMainWindow, Ui_MainWindow):
                 getattr(self, f"b_{i}_{j}").setVisible(i <= rows_b and j <= cols_b)
                 getattr(self, f"c_{i}_{j}").setVisible(True)
 
-    # =========================
     # ПРОЦЕНТЫ
-    # =========================
+
     def calc_percent1(self):
         try:
             p = float(self.percentEditPercent.text())
@@ -114,9 +109,8 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         except:
             self.percentResult4.setText("Ошибка")
 
-    # =========================
+
     # НОД / НОК
-    # =========================
     def calc_gcd_lcm(self):
 
         try:
@@ -155,9 +149,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             self.gcdResult1.setText("Ошибка ввода")
             self.gcdResult2.setText("")
 
-    # =========================
     # ЛАМИНАТ
-    # =========================
     def calc_laminate(self):
 
         try:
@@ -203,9 +195,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             self.lamResult1.setText("Ошибка")
             self.lamResult2.setText("")
 
-    # =========================
     # НДС
-    # =========================
     def calc_vat(self):
 
         total = float(self.vatSum.text())
@@ -220,9 +210,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             self.vatRes1.setText(f"{vat_inside:.2f}")
             self.vatRes2.setText(f"{total - vat_inside:.2f}")
 
-    # =========================
     # МАТРИЦЫ
-    # =========================
     def get_val(self, obj):
         try:
             return float(obj.text())
@@ -233,59 +221,44 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
         try:
 
-            # --------------------
             # матрица A
-            # --------------------
             a = [
                 [self.get_val(self.a_1_1), self.get_val(self.a_1_2), self.get_val(self.a_1_3)],
                 [self.get_val(self.a_2_1), self.get_val(self.a_2_2), self.get_val(self.a_2_3)],
                 [self.get_val(self.a_3_1), self.get_val(self.a_3_2), self.get_val(self.a_3_3)]
             ]
 
-            # --------------------
             # матрица B
-            # --------------------
             b = [
                 [self.get_val(self.b_1_1), self.get_val(self.b_1_2), self.get_val(self.b_1_3)],
                 [self.get_val(self.b_2_1), self.get_val(self.b_2_2), self.get_val(self.b_2_3)],
                 [self.get_val(self.b_3_1), self.get_val(self.b_3_2), self.get_val(self.b_3_3)]
             ]
 
-            # --------------------
-            # результат
-            # --------------------
             c = [[0 for _ in range(3)] for _ in range(3)]
 
             op = self.operation.currentText()
 
-            # --------------------
             # СЛОЖЕНИЕ
-            # --------------------
             if op == "+":
                 for i in range(3):
                     for j in range(3):
                         c[i][j] = a[i][j] + b[i][j]
 
-            # --------------------
             # ВЫЧИТАНИЕ
-            # --------------------
             elif op == "-":
                 for i in range(3):
                     for j in range(3):
                         c[i][j] = a[i][j] - b[i][j]
 
-            # --------------------
             # УМНОЖЕНИЕ
-            # --------------------
             else:
                 for i in range(3):
                     for j in range(3):
                         for k in range(3):
                             c[i][j] += a[i][k] * b[k][j]
 
-            # --------------------
             # вывод
-            # --------------------
             self.c_1_1.setText(str(c[0][0]))
             self.c_1_2.setText(str(c[0][1]))
             self.c_1_3.setText(str(c[0][2]))
