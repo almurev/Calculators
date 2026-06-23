@@ -10,7 +10,7 @@
 
 ## Установка и запуск
 1. Клонировать репозиторий:
-   git clone <ссылка_на_репозиторий> далее ссылка: (https://github.com/almurev/The_reference_point_2)
+   git clone <ссылка_на_репозиторий> далее ссылка: https://github.com/almurev/Calculators
 2. Создать виртуальное окружение:
    python -m venv .venv
 3. Активировать окружение:
