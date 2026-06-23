@@ -1,0 +1,3249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1140</width>
+    <height>860</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Калькуляторы</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="mainTabWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>1110</width>
+      <height>820</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="tabPercent">
+     <attribute name="title">
+      <string>Калькулятор процентов</string>
+     </attribute>
+     <widget class="QTabWidget" name="percentTabWidget">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>20</y>
+        <width>1010</width>
+        <height>325</height>
+       </rect>
+      </property>
+      <property name="currentIndex">
+       <number>2</number>
+      </property>
+      <widget class="QWidget" name="percentPage1">
+       <attribute name="title">
+        <string>Нахождение процента от числа</string>
+       </attribute>
+       <widget class="QFrame" name="percentPanel1">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>50</y>
+          <width>970</width>
+          <height>235</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string>background: rgb(255, 255, 255); border: 1px solid rgb(220, 220, 220); border-radius: 8px;</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+       </widget>
+       <widget class="QLabel" name="percentTitle1">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>62</y>
+          <width>820</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Times New Roman</family>
+          <pointsize>12</pointsize>
+          <weight>75</weight>
+          <italic>false</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string>color: rgb(140, 160, 0);</string>
+        </property>
+        <property name="text">
+         <string>Калькулятор процентов — Нахождение процента от числа</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="percentL1">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>118</y>
+          <width>170</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Times New Roman</family>
+          <pointsize>11</pointsize>
+          <weight>75</weight>
+          <italic>false</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Сколько составляет</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="percentEditPercent">
+        <property name="geometry">
+         <rect>
+          <x>295</x>
+          <y>115</y>
+          <width>100</width>
+          <height>32</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="percentL2">
+        <property name="geometry">
+         <rect>
+          <x>408</x>
+          <y>118</y>
+          <width>95</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Times New Roman</family>
+          <pointsize>11</pointsize>
+          <weight>75</weight>
+          <italic>false</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>% от числа</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="percentEditNumber">
+        <property name="geometry">
+         <rect>
+          <x>520</x>
+          <y>115</y>
+          <width>100</width>
+          <height>32</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="percentClear1">
+        <property name="geometry">
+         <rect>
+          <x>640</x>
+          <y>112</y>
+          <width>40</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string>background-color: rgb(245,245,245); color: rgb(80,80,80); border: 1px solid rgb(200,200,200); border-radius: 4px;</string>
+        </property>
+        <property name="text">
+         <string>✕</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="percentCalc1">
+        <property name="geometry">
+         <rect>
+          <x>390</x>
+          <y>175</y>
+          <width>220</width>
+          <height>45</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string>background-color: rgb(121, 160, 0); color: white; border: none; border-radius: 4px; font: bold 12pt &quot;Times New Roman&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Рассчитать</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="percentResult1">
+        <property name="geometry">
+         <rect>
+          <x>80</x>
+          <y>235</y>
+          <width>840</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Times New Roman</family>
+          <pointsize>11</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="percentPage2">
+       <attribute name="title">
+        <string>Сколько процентов от X к Y</string>
+       </attribute>
+       <widget class="QFrame" name="percentPanel2">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>50</y>
+          <width>970</width>
+          <height>235</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string>background: rgb(255, 255, 255); border: 1px solid rgb(220, 220, 220); border-radius: 8px;</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+       </widget>
+       <widget class="QLabel" name="percentTitle2">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>62</y>
+          <width>860</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Times New Roman</family>
+          <pointsize>12</pointsize>
+          <weight>75</weight>
+          <italic>false</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string>color: rgb(140, 160, 0);</string>
+        </property>
+        <property name="text">
+         <string>Калькулятор процентов — Сколько процентов составляет число X от числа Y</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="percent2A">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>118</y>
+          <width>100</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Times New Roman</family>
+          <pointsize>11</pointsize>
+          <weight>75</weight>
+          <italic>false</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Число X:</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="percentEditX">
+        <property name="geometry">
+         <rect>
+          <x>180</x>
+          <y>115</y>
+          <width>100</width>
+          <height>32</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="percent2B">
+        <property name="geometry">
+         <rect>
+          <x>330</x>
+          <y>118</y>
+          <width>100</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Times New Roman</family>
+          <pointsize>11</pointsize>
+          <weight>75</weight>
+          <italic>false</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Число Y:</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="percentEditY">
+        <property name="geometry">
+         <rect>
+          <x>440</x>
+          <y>115</y>
+          <width>100</width>
+          <height>32</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="percentClear2">
+        <property name="geometry">
+         <rect>
+          <x>560</x>
+          <y>112</y>
+          <width>40</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string>background-color: rgb(245,245,245); color: rgb(80,80,80); border: 1px solid rgb(200,200,200); border-radius: 4px;</string>
+        </property>
+        <property name="text">
+         <string>✕</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="percentCalc2">
+        <property name="geometry">
+         <rect>
+          <x>390</x>
+          <y>175</y>
+          <width>220</width>
+          <height>45</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string>background-color: rgb(121, 160, 0); color: white; border: none; border-radius: 4px; font: bold 12pt &quot;Times New Roman&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Рассчитать</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="percentResult2">
+        <property name="geometry">
+         <rect>
+          <x>80</x>
+          <y>235</y>
+          <width>840</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Times New Roman</family>
+          <pointsize>11</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="percentPage3">
+       <attribute name="title">
+        <string>Прибавление процента</string>
+       </attribute>
+       <widget class="QFrame" name="percentPanel3">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>50</y>
+          <width>970</width>
+          <height>235</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string>background: rgb(255, 255, 255); border: 1px solid rgb(220, 220, 220); border-radius: 8px;</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+       </widget>
+       <widget class="QLabel" name="percentTitle3">
+        <property name="geometry">
+         <rect>
+          <x>80</x>
+          <y>62</y>
+          <width>820</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Times New Roman</family>
+          <pointsize>12</pointsize>
+          <weight>75</weight>
+          <italic>false</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string>color: rgb(140, 160, 0);</string>
+        </property>
+        <property name="text">
+         <string>Калькулятор процентов — Прибавление процента к числу</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="percent3A">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>118</y>
+          <width>150</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Times New Roman</family>
+          <pointsize>11</pointsize>
+          <weight>75</weight>
+          <italic>false</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Прибавить %:</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="percentAddPercent">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>115</y>
+          <width>100</width>
+          <height>32</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="percent3B">
+        <property name="geometry">
+         <rect>
+          <x>350</x>
+          <y>118</y>
+          <width>100</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Times New Roman</family>
+          <pointsize>11</pointsize>
+          <weight>75</weight>
+          <italic>false</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>к числу:</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="percentAddNumber">
+        <property name="geometry">
+         <rect>
+          <x>455</x>
+          <y>115</y>
+          <width>100</width>
+          <height>32</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="percentClear3">
+        <property name="geometry">
+         <rect>
+          <x>575</x>
+          <y>112</y>
+          <width>40</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string>background-color: rgb(245,245,245); color: rgb(80,80,80); border: 1px solid rgb(200,200,200); border-radius: 4px;</string>
+        </property>
+        <property name="text">
+         <string>✕</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="percentCalc3">
+        <property name="geometry">
+         <rect>
+          <x>390</x>
+          <y>175</y>
+          <width>220</width>
+          <height>45</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string>background-color: rgb(121, 160, 0); color: white; border: none; border-radius: 4px; font: bold 12pt &quot;Times New Roman&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Рассчитать</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="percentResult3">
+        <property name="geometry">
+         <rect>
+          <x>80</x>
+          <y>235</y>
+          <width>840</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Times New Roman</family>
+          <pointsize>11</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="percentPage4">
+       <attribute name="title">
+        <string>Вычитание процента</string>
+       </attribute>
+       <widget class="QFrame" name="percentPanel4">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>50</y>
+          <width>970</width>
+          <height>235</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string>background: rgb(255, 255, 255); border: 1px solid rgb(220, 220, 220); border-radius: 8px;</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+       </widget>
+       <widget class="QLabel" name="percentTitle4">
+        <property name="geometry">
+         <rect>
+          <x>80</x>
+          <y>62</y>
+          <width>820</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Times New Roman</family>
+          <pointsize>12</pointsize>
+          <weight>75</weight>
+          <italic>false</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string>color: rgb(140, 160, 0);</string>
+        </property>
+        <property name="text">
+         <string>Калькулятор процентов — Вычитание процента из числа</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="percent4A">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>118</y>
+          <width>90</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Times New Roman</family>
+          <pointsize>11</pointsize>
+          <weight>75</weight>
+          <italic>false</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Из числа</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="percentSubNumber">
+        <property name="geometry">
+         <rect>
+          <x>180</x>
+          <y>115</y>
+          <width>100</width>
+          <height>32</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>15</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="percent4B">
+        <property name="geometry">
+         <rect>
+          <x>295</x>
+          <y>118</y>
+          <width>90</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Times New Roman</family>
+          <pointsize>11</pointsize>
+          <weight>75</weight>
+          <italic>false</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>вычесть</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="percentSubPercent">
+        <property name="geometry">
+         <rect>
+          <x>390</x>
+          <y>115</y>
+          <width>100</width>
+          <height>32</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>3</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="percent4C">
+        <property name="geometry">
+         <rect>
+          <x>505</x>
+          <y>118</y>
+          <width>30</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Times New Roman</family>
+          <pointsize>11</pointsize>
+          <weight>75</weight>
+          <italic>false</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>%</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="percentClear4">
+        <property name="geometry">
+         <rect>
+          <x>540</x>
+          <y>112</y>
+          <width>40</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string>background-color: rgb(245,245,245); color: rgb(80,80,80); border: 1px solid rgb(200,200,200); border-radius: 4px;</string>
+        </property>
+        <property name="text">
+         <string>✕</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="percentCalc4">
+        <property name="geometry">
+         <rect>
+          <x>390</x>
+          <y>175</y>
+          <width>220</width>
+          <height>45</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string>background-color: rgb(121, 160, 0); color: white; border: none; border-radius: 4px; font: bold 12pt &quot;Times New Roman&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Рассчитать</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="percentResult4">
+        <property name="geometry">
+         <rect>
+          <x>180</x>
+          <y>235</y>
+          <width>650</width>
+          <height>24</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Times New Roman</family>
+          <pointsize>11</pointsize>
+          <weight>75</weight>
+          <italic>false</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Из числа 15 вычесть 3% равно 14.55</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="gcdPage">
+     <attribute name="title">
+      <string>НОД и НОК</string>
+     </attribute>
+     <widget class="QFrame" name="gcdPanel">
+      <property name="geometry">
+       <rect>
+        <x>15</x>
+        <y>15</y>
+        <width>1015</width>
+        <height>740</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string>background: rgb(255, 255, 255); border: 1px solid rgb(220, 220, 220); border-radius: 8px;</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="gcdTitle">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>25</y>
+        <width>720</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>14</pointsize>
+        <weight>75</weight>
+        <italic>false</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string>color: rgb(140, 160, 0);</string>
+      </property>
+      <property name="text">
+       <string>Калькулятор для нахождения НОД и НОК чисел</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="gcdPrompt">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>80</y>
+        <width>580</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>11</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Выберите количество чисел, для которых требуется найти НОД и НОК:</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rb2">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>115</y>
+        <width>90</width>
+        <height>26</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>2 числа</string>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rb3">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>115</y>
+        <width>90</width>
+        <height>26</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>3 числа</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rb4">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>115</y>
+        <width>90</width>
+        <height>26</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>4 числа</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="gcdL1">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>175</y>
+        <width>100</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>11</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Первое число</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="gcdL2">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>175</y>
+        <width>110</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>11</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Второе число</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="gcdL3">
+      <property name="geometry">
+       <rect>
+        <x>485</x>
+        <y>175</y>
+        <width>100</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>11</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="visible">
+       <bool>false</bool>
+      </property>
+      <property name="text">
+       <string>Третье число</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="gcdL4">
+      <property name="geometry">
+       <rect>
+        <x>660</x>
+        <y>175</y>
+        <width>110</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>11</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="visible">
+       <bool>false</bool>
+      </property>
+      <property name="text">
+       <string>Четвёртое число</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="num1">
+      <property name="geometry">
+       <rect>
+        <x>105</x>
+        <y>205</y>
+        <width>130</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>45</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="num2">
+      <property name="geometry">
+       <rect>
+        <x>285</x>
+        <y>205</y>
+        <width>130</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>15</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="num3">
+      <property name="geometry">
+       <rect>
+        <x>465</x>
+        <y>205</y>
+        <width>130</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="visible">
+       <bool>false</bool>
+      </property>
+      <property name="text">
+       <string>40</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="num4">
+      <property name="geometry">
+       <rect>
+        <x>645</x>
+        <y>205</y>
+        <width>130</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="visible">
+       <bool>false</bool>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="gcdCalc">
+      <property name="geometry">
+       <rect>
+        <x>410</x>
+        <y>280</y>
+        <width>220</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string>background-color: rgb(121, 160, 0); color: white; border: none; border-radius: 4px; font: bold 12pt &quot;Times New Roman&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Вычислить</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="gcdAnswerTitle">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>355</y>
+        <width>150</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>14</pointsize>
+        <weight>75</weight>
+        <italic>false</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Ответ:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="gcdResult1">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>405</y>
+        <width>700</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>12</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Наибольший общий делитель НОД (45; 15; 40) = 5</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="gcdResult2">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>445</y>
+        <width>700</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>12</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Наименьшее общее кратное НОК (45; 15; 40) = 360</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="lamPage">
+     <attribute name="title">
+      <string>Ламинат</string>
+     </attribute>
+     <widget class="QFrame" name="lamPanel">
+      <property name="geometry">
+       <rect>
+        <x>15</x>
+        <y>15</y>
+        <width>1015</width>
+        <height>740</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string>background: rgb(255, 255, 255); border: 1px solid rgb(220, 220, 220); border-radius: 8px;</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lamTitle">
+      <property name="geometry">
+       <rect>
+        <x>235</x>
+        <y>25</y>
+        <width>600</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>14</pointsize>
+        <weight>75</weight>
+        <italic>false</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string>color: rgb(140, 160, 0);</string>
+      </property>
+      <property name="text">
+       <string>Калькулятор для расчета ламината</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lam1">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>95</y>
+        <width>200</width>
+        <height>26</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>11</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Длина комнаты</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="roomLen">
+      <property name="geometry">
+       <rect>
+        <x>500</x>
+        <y>90</y>
+        <width>120</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>430</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lam1u">
+      <property name="geometry">
+       <rect>
+        <x>625</x>
+        <y>95</y>
+        <width>150</width>
+        <height>26</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>10</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>сантиметры (см)</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lam2">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>145</y>
+        <width>200</width>
+        <height>26</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>11</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Ширина комнаты</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="roomWidth">
+      <property name="geometry">
+       <rect>
+        <x>500</x>
+        <y>140</y>
+        <width>120</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>320</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lam2u">
+      <property name="geometry">
+       <rect>
+        <x>625</x>
+        <y>145</y>
+        <width>150</width>
+        <height>26</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>10</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>сантиметры (см)</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lam3">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>195</y>
+        <width>280</width>
+        <height>26</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>11</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Длина панели ламината</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="panelLen">
+      <property name="geometry">
+       <rect>
+        <x>500</x>
+        <y>190</y>
+        <width>120</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>1291</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lam3u">
+      <property name="geometry">
+       <rect>
+        <x>625</x>
+        <y>195</y>
+        <width>150</width>
+        <height>26</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>10</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>миллиметры (мм)</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lam4">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>245</y>
+        <width>280</width>
+        <height>26</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>11</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Ширина панели ламината</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="panelWidth">
+      <property name="geometry">
+       <rect>
+        <x>500</x>
+        <y>240</y>
+        <width>120</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>193</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lam4u">
+      <property name="geometry">
+       <rect>
+        <x>625</x>
+        <y>245</y>
+        <width>150</width>
+        <height>26</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>10</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>миллиметры (мм)</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lam5">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>295</y>
+        <width>280</width>
+        <height>26</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>11</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Число панелей в упаковке</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="packCount">
+      <property name="geometry">
+       <rect>
+        <x>500</x>
+        <y>290</y>
+        <width>120</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>8</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lam5u">
+      <property name="geometry">
+       <rect>
+        <x>625</x>
+        <y>295</y>
+        <width>120</width>
+        <height>26</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>10</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>штук (шт.)</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lam6">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>345</y>
+        <width>280</width>
+        <height>26</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>11</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Способ укладки ламината</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="lamMethod">
+      <property name="geometry">
+       <rect>
+        <x>500</x>
+        <y>340</y>
+        <width>400</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <item>
+       <property name="text">
+        <string>с использованием отрезанного элемента</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>без использования отрезанного элемента</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QLabel" name="lam7">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>395</y>
+        <width>280</width>
+        <height>26</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>11</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Минимальная длина обрезка</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="trimLen">
+      <property name="geometry">
+       <rect>
+        <x>500</x>
+        <y>390</y>
+        <width>120</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>250</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lam7u">
+      <property name="geometry">
+       <rect>
+        <x>625</x>
+        <y>395</y>
+        <width>150</width>
+        <height>26</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>10</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>миллиметры (мм)</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lam8">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>445</y>
+        <width>220</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>10</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Отступ от стен :
+рекомендуемое значение 8 - 10 мм</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="wallOffset">
+      <property name="geometry">
+       <rect>
+        <x>500</x>
+        <y>440</y>
+        <width>120</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>10</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lam8u">
+      <property name="geometry">
+       <rect>
+        <x>625</x>
+        <y>445</y>
+        <width>150</width>
+        <height>26</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>10</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>миллиметры (мм)</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lamDir">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>495</y>
+        <width>280</width>
+        <height>26</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>11</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Направление укладки ламината</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="dirLen">
+      <property name="geometry">
+       <rect>
+        <x>500</x>
+        <y>490</y>
+        <width>220</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>по длине комнаты</string>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="dirWidth">
+      <property name="geometry">
+       <rect>
+        <x>500</x>
+        <y>520</y>
+        <width>220</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>по ширине комнаты</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="dirDiag45">
+      <property name="geometry">
+       <rect>
+        <x>500</x>
+        <y>550</y>
+        <width>220</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>по диагонали 45°</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="dirDiag135">
+      <property name="geometry">
+       <rect>
+        <x>500</x>
+        <y>580</y>
+        <width>220</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>по диагонали 135°</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="lamCalc">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>625</y>
+        <width>220</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string>background-color: rgb(121, 160, 0); color: white; border: none; border-radius: 4px; font: bold 12pt &quot;Times New Roman&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Рассчитать</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lamResult1">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>685</y>
+        <width>720</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <italic>false</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Требуемое количество досок ламината: 57</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lamResult2">
+      <property name="geometry">
+       <rect>
+        <x>235</x>
+        <y>720</y>
+        <width>600</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <italic>false</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Количество упаковок ламината: 8</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="vatPage">
+     <attribute name="title">
+      <string>НДС</string>
+     </attribute>
+     <widget class="QFrame" name="vatPanel">
+      <property name="geometry">
+       <rect>
+        <x>15</x>
+        <y>15</y>
+        <width>1015</width>
+        <height>740</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string>background: rgb(255, 255, 255); border: 1px solid rgb(220, 220, 220); border-radius: 8px;</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="vatTitle">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>25</y>
+        <width>300</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>16</pointsize>
+        <weight>75</weight>
+        <italic>false</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string>color: rgb(140, 160, 0);</string>
+      </property>
+      <property name="text">
+       <string>Расчет НДС</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="vat1">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>110</y>
+        <width>160</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>11</pointsize>
+        <weight>75</weight>
+        <italic>false</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Сумма (цена):</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="vatSum">
+      <property name="geometry">
+       <rect>
+        <x>500</x>
+        <y>105</y>
+        <width>450</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>7000</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="vat2">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>205</y>
+        <width>160</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>11</pointsize>
+        <weight>75</weight>
+        <italic>false</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Ставка НДС, %:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="vatRate">
+      <property name="geometry">
+       <rect>
+        <x>500</x>
+        <y>200</y>
+        <width>450</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>20</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="rate10">
+      <property name="geometry">
+       <rect>
+        <x>500</x>
+        <y>255</y>
+        <width>70</width>
+        <height>26</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string>background: transparent; border: none; color: rgb(70,150,220); text-decoration: underline;</string>
+      </property>
+      <property name="text">
+       <string>10%</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="rate18">
+      <property name="geometry">
+       <rect>
+        <x>580</x>
+        <y>255</y>
+        <width>70</width>
+        <height>26</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string>background: transparent; border: none; color: rgb(70,150,220); text-decoration: underline;</string>
+      </property>
+      <property name="text">
+       <string>18%</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="rate20">
+      <property name="geometry">
+       <rect>
+        <x>660</x>
+        <y>255</y>
+        <width>70</width>
+        <height>26</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string>background: transparent; border: none; color: rgb(70,150,220); text-decoration: underline;</string>
+      </property>
+      <property name="text">
+       <string>20%</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="vatType">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>320</y>
+        <width>150</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>11</pointsize>
+        <weight>75</weight>
+        <italic>false</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Вид расчета:</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="vatAdd">
+      <property name="geometry">
+       <rect>
+        <x>500</x>
+        <y>320</y>
+        <width>220</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Начислить НДС</string>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="vatDeduct">
+      <property name="geometry">
+       <rect>
+        <x>500</x>
+        <y>360</y>
+        <width>220</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Выделить НДС</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="vatCalc">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>430</y>
+        <width>220</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string>background-color: rgb(121, 160, 0); color: white; border: none; border-radius: 4px; font: bold 12pt &quot;Times New Roman&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Рассчитать</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="vatRes1Title">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>505</y>
+        <width>140</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>12</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>НДС 20%:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="vatRes1">
+      <property name="geometry">
+       <rect>
+        <x>510</x>
+        <y>495</y>
+        <width>160</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>14</pointsize>
+        <weight>75</weight>
+        <italic>false</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string>color: rgb(49, 133, 198);</string>
+      </property>
+      <property name="text">
+       <string>1 400 руб.</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="vatRes1Text">
+      <property name="geometry">
+       <rect>
+        <x>510</x>
+        <y>530</y>
+        <width>380</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <italic>true</italic>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string>font-style: italic; color: rgb(120,120,120);</string>
+      </property>
+      <property name="text">
+       <string>Одна тысяча четыреста рублей 00 копеек</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="vatRes2Title">
+      <property name="geometry">
+       <rect>
+        <x>325</x>
+        <y>620</y>
+        <width>180</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>12</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Сумма с НДС:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="vatRes2">
+      <property name="geometry">
+       <rect>
+        <x>510</x>
+        <y>610</y>
+        <width>160</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>14</pointsize>
+        <weight>75</weight>
+        <italic>false</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string>color: rgb(200, 50, 50);</string>
+      </property>
+      <property name="text">
+       <string>8 400 руб.</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="vatRes2Text">
+      <property name="geometry">
+       <rect>
+        <x>510</x>
+        <y>645</y>
+        <width>380</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <italic>true</italic>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string>font-style: italic; color: rgb(120,120,120);</string>
+      </property>
+      <property name="text">
+       <string>Восемь тысяч четыреста рублей 00 копеек</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="matPage">
+     <attribute name="title">
+      <string>Матрицы</string>
+     </attribute>
+     <widget class="QFrame" name="matPanel">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>10</y>
+        <width>1015</width>
+        <height>740</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string>background: rgb(255, 255, 255); border: 1px solid rgb(220, 220, 220); border-radius: 8px;</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QPushButton" name="matCalc">
+       <property name="geometry">
+        <rect>
+         <x>390</x>
+         <y>510</y>
+         <width>220</width>
+         <height>50</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string>background-color: rgb(121, 160, 0); color: white; border: none; border-radius: 4px; font: bold 12pt &quot;Times New Roman&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Рассчитать</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="c_1_2">
+       <property name="geometry">
+        <rect>
+         <x>780</x>
+         <y>130</y>
+         <width>50</width>
+         <height>32</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>5</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="c_1_3">
+       <property name="geometry">
+        <rect>
+         <x>840</x>
+         <y>130</y>
+         <width>50</width>
+         <height>32</height>
+        </rect>
+       </property>
+       <property name="visible">
+        <bool>false</bool>
+       </property>
+       <property name="text">
+        <string>24</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="c_1_1">
+       <property name="geometry">
+        <rect>
+         <x>710</x>
+         <y>130</y>
+         <width>50</width>
+         <height>32</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>8</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="c_2_1">
+       <property name="geometry">
+        <rect>
+         <x>710</x>
+         <y>170</y>
+         <width>50</width>
+         <height>32</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>3</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="c_2_2">
+       <property name="geometry">
+        <rect>
+         <x>780</x>
+         <y>170</y>
+         <width>50</width>
+         <height>32</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>21</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="c_2_3">
+       <property name="geometry">
+        <rect>
+         <x>840</x>
+         <y>170</y>
+         <width>50</width>
+         <height>32</height>
+        </rect>
+       </property>
+       <property name="visible">
+        <bool>false</bool>
+       </property>
+       <property name="text">
+        <string>-1</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="c_3_1">
+       <property name="geometry">
+        <rect>
+         <x>710</x>
+         <y>210</y>
+         <width>50</width>
+         <height>32</height>
+        </rect>
+       </property>
+       <property name="visible">
+        <bool>false</bool>
+       </property>
+       <property name="text">
+        <string>1</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="c_3_2">
+       <property name="geometry">
+        <rect>
+         <x>780</x>
+         <y>210</y>
+         <width>50</width>
+         <height>32</height>
+        </rect>
+       </property>
+       <property name="visible">
+        <bool>false</bool>
+       </property>
+       <property name="text">
+        <string>8</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="c_3_3">
+       <property name="geometry">
+        <rect>
+         <x>840</x>
+         <y>210</y>
+         <width>50</width>
+         <height>32</height>
+        </rect>
+       </property>
+       <property name="visible">
+        <bool>false</bool>
+       </property>
+       <property name="text">
+        <string>4</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="matC">
+       <property name="geometry">
+        <rect>
+         <x>730</x>
+         <y>53</y>
+         <width>150</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Times New Roman</family>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <italic>false</italic>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Матрица C
+(3×3)</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="operation">
+       <property name="geometry">
+        <rect>
+         <x>300</x>
+         <y>160</y>
+         <width>80</width>
+         <height>36</height>
+        </rect>
+       </property>
+       <property name="currentIndex">
+        <number>0</number>
+       </property>
+       <item>
+        <property name="text">
+         <string>+</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>/</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>-</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>×</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QLabel" name="label">
+       <property name="geometry">
+        <rect>
+         <x>630</x>
+         <y>170</y>
+         <width>55</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>=</string>
+       </property>
+      </widget>
+      <widget class="QFrame" name="sizeB">
+       <property name="geometry">
+        <rect>
+         <x>580</x>
+         <y>280</y>
+         <width>220</width>
+         <height>210</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string>background: rgb(255, 255, 255); border: 1px solid rgb(220, 220, 220); border-radius: 8px;</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QLabel" name="sizeBTitle">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>10</y>
+          <width>180</width>
+          <height>24</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Times New Roman</family>
+          <pointsize>11</pointsize>
+          <weight>75</weight>
+          <italic>false</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Размер Матрицы B:</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="sizeBL1">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>50</y>
+          <width>110</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Times New Roman</family>
+          <pointsize>10</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>кол-во строк:</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="bRows">
+        <property name="geometry">
+         <rect>
+          <x>80</x>
+          <y>80</y>
+          <width>60</width>
+          <height>34</height>
+         </rect>
+        </property>
+        <property name="currentIndex">
+         <number>1</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>1</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>2</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>3</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>4</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>5</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QLabel" name="sizeBL2">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>120</y>
+          <width>131</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Times New Roman</family>
+          <pointsize>10</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>кол-во столбцов:</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="bCols">
+        <property name="geometry">
+         <rect>
+          <x>80</x>
+          <y>150</y>
+          <width>60</width>
+          <height>34</height>
+         </rect>
+        </property>
+        <property name="currentIndex">
+         <number>1</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>1</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>2</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>3</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>4</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>5</string>
+         </property>
+        </item>
+       </widget>
+      </widget>
+      <widget class="QFrame" name="sizeA">
+       <property name="geometry">
+        <rect>
+         <x>230</x>
+         <y>280</y>
+         <width>220</width>
+         <height>210</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string>background: rgb(255, 255, 255); border: 1px solid rgb(220, 220, 220); border-radius: 8px;</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QLabel" name="sizeATitle">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>10</y>
+          <width>180</width>
+          <height>24</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Times New Roman</family>
+          <pointsize>11</pointsize>
+          <weight>75</weight>
+          <italic>false</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Размер Матрицы A:</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="sizeAL1">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>40</y>
+          <width>110</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Times New Roman</family>
+          <pointsize>10</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>кол-во строк:</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="aRows">
+        <property name="geometry">
+         <rect>
+          <x>80</x>
+          <y>70</y>
+          <width>60</width>
+          <height>34</height>
+         </rect>
+        </property>
+        <property name="currentIndex">
+         <number>1</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>1</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>2</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>3</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>4</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>5</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QLabel" name="sizeAL2">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>120</y>
+          <width>120</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Times New Roman</family>
+          <pointsize>10</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>кол-во столбцов:</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="aCols">
+        <property name="geometry">
+         <rect>
+          <x>80</x>
+          <y>160</y>
+          <width>60</width>
+          <height>34</height>
+         </rect>
+        </property>
+        <property name="currentIndex">
+         <number>1</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>1</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>2</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>3</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>4</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>5</string>
+         </property>
+        </item>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="matTitle">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>25</y>
+        <width>280</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>14</pointsize>
+        <weight>75</weight>
+        <italic>false</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string>color: rgb(140, 160, 0);</string>
+      </property>
+      <property name="text">
+       <string>Калькулятор матриц</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="matA">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>64</y>
+        <width>150</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <italic>false</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Матрица A
+(3×3)</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="matB">
+      <property name="geometry">
+       <rect>
+        <x>500</x>
+        <y>74</y>
+        <width>150</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <italic>false</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Матрица B
+(3×3)</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="a_1_1">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>140</y>
+        <width>50</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="a_1_2">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>140</y>
+        <width>50</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>5</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="a_1_3">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>140</y>
+        <width>50</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="visible">
+       <bool>false</bool>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="a_2_1">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>180</y>
+        <width>50</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>3</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="a_2_2">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>180</y>
+        <width>50</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>9</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="a_2_3">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>180</y>
+        <width>50</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="visible">
+       <bool>false</bool>
+      </property>
+      <property name="text">
+       <string>-1</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="a_3_1">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>220</y>
+        <width>50</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="visible">
+       <bool>false</bool>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="a_3_2">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>220</y>
+        <width>50</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="visible">
+       <bool>false</bool>
+      </property>
+      <property name="text">
+       <string>8</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="a_3_3">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>220</y>
+        <width>50</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="visible">
+       <bool>false</bool>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="b_1_1">
+      <property name="geometry">
+       <rect>
+        <x>460</x>
+        <y>140</y>
+        <width>50</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>8</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="b_1_2">
+      <property name="geometry">
+       <rect>
+        <x>520</x>
+        <y>140</y>
+        <width>50</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="b_1_3">
+      <property name="geometry">
+       <rect>
+        <x>580</x>
+        <y>140</y>
+        <width>50</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="visible">
+       <bool>false</bool>
+      </property>
+      <property name="text">
+       <string>24</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="b_2_1">
+      <property name="geometry">
+       <rect>
+        <x>460</x>
+        <y>180</y>
+        <width>50</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="b_2_2">
+      <property name="geometry">
+       <rect>
+        <x>520</x>
+        <y>180</y>
+        <width>50</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>12</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="b_2_3">
+      <property name="geometry">
+       <rect>
+        <x>580</x>
+        <y>180</y>
+        <width>50</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="visible">
+       <bool>false</bool>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="b_3_1">
+      <property name="geometry">
+       <rect>
+        <x>460</x>
+        <y>220</y>
+        <width>50</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="visible">
+       <bool>false</bool>
+      </property>
+      <property name="text">
+       <string>1</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="b_3_2">
+      <property name="geometry">
+       <rect>
+        <x>520</x>
+        <y>220</y>
+        <width>50</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="visible">
+       <bool>false</bool>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="b_3_3">
+      <property name="geometry">
+       <rect>
+        <x>580</x>
+        <y>220</y>
+        <width>50</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="visible">
+       <bool>false</bool>
+      </property>
+      <property name="text">
+       <string>4</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
